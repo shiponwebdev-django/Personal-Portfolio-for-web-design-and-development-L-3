@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Portfolio page with personal information, education, skills, certificates, and experience.">
+    <meta name="keywords" content="portfolio, education, training, certificate, experience, skill">
+    <meta name="author" content="John Doe">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Personal Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <!-- Navbar -->
+    <div class="navbar bg-base-100 shadow-md px-4">
+        <div class="navbar-start"><a href="index.html" class="text-xl font-bold">My Portfolio</a></div>
+        <div class="navbar-end lg:hidden">
+            <div class="dropdown dropdown-end">
+                <label tabindex="0" class="btn btn-ghost">Menu</label>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-10 p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a class="hover:bg-blue-100" href="index.html">Home</a></li><li><a class="hover:bg-blue-100" href="about.html">About</a></li><li><a class="hover:bg-blue-100" href="portfolio.html">Portfolio</a></li><li><a class="hover:bg-blue-100" href="services.html">Services</a></li><li><a class="hover:bg-blue-100" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="navbar-end hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+                <li><a class="hover:bg-blue-100" href="index.html">Home</a></li><li><a class="hover:bg-blue-100" href="about.html">About</a></li><li><a class="hover:bg-blue-100" href="portfolio.html">Portfolio</a></li><li><a class="hover:bg-blue-100" href="services.html">Services</a></li><li><a class="hover:bg-blue-100" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Page Title -->
+    <section class="bg-blue-100 py-12 text-center"><h1 class="text-4xl font-bold">My Portfolio</h1><p class="mt-2">Here is my personal, education, skill, and work information.</p></section>
+
+    <!-- Personal Information -->
+    <section class="max-w-6xl mx-auto my-10 px-4">
+        <div class="bg-white p-6 rounded-lg shadow">
+            <h2 class="text-3xl font-bold mb-4">Personal Information</h2>
+            <div class="overflow-x-auto">
+                <table class="table"><tbody>
+                    <tr><td class="font-bold">Name</td><td>John Doe</td></tr>
+                    <tr><td class="font-bold">Profession</td><td>Beginner Web Designer</td></tr>
+                    <tr><td class="font-bold">Email</td><td>john@example.com</td></tr>
+                    <tr><td class="font-bold">Phone</td><td>+880 1700 000000</td></tr>
+                    <tr><td class="font-bold">Address</td><td>Dhaka, Bangladesh</td></tr>
+                </tbody></table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Information -->
+    <section class="max-w-6xl mx-auto my-10 px-4">
+        <h2 class="text-3xl font-bold text-center mb-6">Education Information</h2>
+        <div class="grid md:grid-cols-2 gap-6">
+            <div class="card bg-white shadow"><div class="card-body"><h3 class="card-title">Diploma in Computer Science</h3><p>Institute: Example Polytechnic Institute</p><p>Year: 2023 - Running</p></div></div>
+            <div class="card bg-white shadow"><div class="card-body"><h3 class="card-title">Secondary School Certificate</h3><p>School: Example High School</p><p>Year: 2022</p></div></div>
+        </div>
+    </section>
+
+    <!-- Special Skill -->
+    <section class="max-w-6xl mx-auto my-10 px-4">
+        <h2 class="text-3xl font-bold text-center mb-6">Special Skills</h2>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="card bg-white shadow"><div class="card-body"><h3 class="card-title">HTML Structure</h3><p>I can create basic HTML page structure.</p></div></div>
+            <div class="card bg-white shadow"><div class="card-body"><h3 class="card-title">Responsive Layout</h3><p>I can create responsive sections using Tailwind CSS.</p></div></div>
+            <div class="card bg-white shadow"><div class="card-body"><h3 class="card-title">Basic JavaScript</h3><p>I can write simple JavaScript for form validation.</p></div></div>
+        </div>
+    </section>
+
+    <!-- Training Certification with DaisyUI Modal -->
+    <section class="max-w-6xl mx-auto my-10 px-4">
+        <div class="bg-white p-6 rounded-lg shadow text-center">
+            <h2 class="text-3xl font-bold mb-4">Training Certification</h2>
+            <p class="mb-4">Click the button to see my training certificate information.</p>
+            <label for="certificateModal" class="btn btn-primary">View Certificate</label>
+            <input type="checkbox" id="certificateModal" class="modal-toggle">
+            <div class="modal" role="dialog">
+                <div class="modal-box">
+                    <h3 class="text-lg font-bold">Web Design Training Certificate</h3>
+                    <p class="py-4">Course Name: Web Design and Development</p>
+                    <p>Institute: Example Training Center</p><p>Duration: 3 Months</p><p>Result: Successfully Completed</p>
+                    <div class="modal-action"><label for="certificateModal" class="btn">Close</label></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Working Experience -->
+    <section class="max-w-6xl mx-auto my-10 px-4">
+        <h2 class="text-3xl font-bold text-center mb-6">Working Experience</h2>
+        <div class="grid md:grid-cols-2 gap-6">
+            <div class="card bg-white shadow"><div class="card-body"><h3 class="card-title">Freelance Practice</h3><p>I have created simple landing pages and portfolio pages for practice.</p></div></div>
+            <div class="card bg-white shadow"><div class="card-body"><h3 class="card-title">Student Projects</h3><p>I have completed small class projects using HTML, Tailwind CSS, and JavaScript.</p></div></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer footer-center bg-base-200 text-base-content p-6 mt-10"><aside><p class="font-bold">My Portfolio</p><p>Simple Personal Portfolio Website</p><p id="dateTime">Loading date and time...</p></aside></footer>
+    <script src="script.js"></script>
+</body>
+</html>

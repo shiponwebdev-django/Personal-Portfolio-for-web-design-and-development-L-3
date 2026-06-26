@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Personal Portfolio Website of John Doe, a beginner web designer and developer.">
+    <meta name="keywords" content="personal portfolio, web designer, web developer, HTML, Tailwind CSS">
+    <meta name="author" content="John Doe">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Personal Portfolio</title>
+
+    <!-- Tailwind CSS and DaisyUI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Navbar -->
+    <div class="navbar bg-base-100 shadow-md px-4">
+        <div class="navbar-start">
+            <a href="index.html" class="text-xl font-bold">My Portfolio</a>
+        </div>
+
+        <div class="navbar-end lg:hidden">
+            <div class="dropdown dropdown-end">
+                <label tabindex="0" class="btn btn-ghost">Menu</label>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-10 p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a class="hover:bg-blue-100" href="index.html">Home</a></li>
+                    <li><a class="hover:bg-blue-100" href="about.html">About</a></li>
+                    <li><a class="hover:bg-blue-100" href="portfolio.html">Portfolio</a></li>
+                    <li><a class="hover:bg-blue-100" href="services.html">Services</a></li>
+                    <li><a class="hover:bg-blue-100" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="navbar-end hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+                <li><a class="hover:bg-blue-100" href="index.html">Home</a></li>
+                <li><a class="hover:bg-blue-100" href="about.html">About</a></li>
+                <li><a class="hover:bg-blue-100" href="portfolio.html">Portfolio</a></li>
+                <li><a class="hover:bg-blue-100" href="services.html">Services</a></li>
+                <li><a class="hover:bg-blue-100" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Banner Slider -->
+    <section class="max-w-6xl mx-auto mt-6 px-4">
+        <div class="carousel w-full rounded-lg">
+            <div id="slide1" class="carousel-item relative w-full">
+                <div class="w-full h-80 bg-blue-200 flex items-center justify-center text-center p-6">
+                    <div>
+                        <h1 class="text-4xl font-bold mb-3">Welcome to My Portfolio</h1>
+                        <p class="text-lg">I am a beginner web designer and developer.</p>
+                    </div>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">Prev</a>
+                    <a href="#slide2" class="btn btn-circle">Next</a>
+                </div>
+            </div>
+
+            <div id="slide2" class="carousel-item relative w-full">
+                <div class="w-full h-80 bg-green-200 flex items-center justify-center text-center p-6">
+                    <div>
+                        <h1 class="text-4xl font-bold mb-3">Simple Web Design</h1>
+                        <p class="text-lg">I create clean and responsive websites.</p>
+                    </div>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">Prev</a>
+                    <a href="#slide3" class="btn btn-circle">Next</a>
+                </div>
+            </div>
+
+            <div id="slide3" class="carousel-item relative w-full">
+                <div class="w-full h-80 bg-yellow-200 flex items-center justify-center text-center p-6">
+                    <div>
+                        <h1 class="text-4xl font-bold mb-3">Learning Every Day</h1>
+                        <p class="text-lg">I am improving my HTML, Tailwind CSS, and JavaScript skills.</p>
+                    </div>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">Prev</a>
+                    <a href="#slide1" class="btn btn-circle">Next</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="max-w-6xl mx-auto my-10 px-4">
+        <div class="grid md:grid-cols-2 gap-6 items-center bg-white p-6 rounded-lg shadow">
+            <img class="rounded-lg w-full" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=800" alt="Profile image">
+            <div>
+                <h2 class="text-3xl font-bold mb-3">About Me</h2>
+                <p class="mb-3">My name is John Doe. I am a beginner web designer. I like to create simple websites using HTML, Tailwind CSS, DaisyUI, and JavaScript.</p>
+                <p>I am learning web development step by step and trying to improve my skills by making small projects.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission and Vision -->
+    <section class="max-w-6xl mx-auto my-10 px-4">
+        <h2 class="text-3xl font-bold text-center mb-6">Career Mission and Vision</h2>
+        <div class="grid md:grid-cols-2 gap-6">
+            <div class="card bg-white shadow"><div class="card-body"><h3 class="card-title">Mission</h3><p>My mission is to learn web development properly and create useful websites for people and businesses.</p></div></div>
+            <div class="card bg-white shadow"><div class="card-body"><h3 class="card-title">Vision</h3><p>My vision is to become a professional web developer and build modern, clean, and responsive websites.</p></div></div>
+        </div>
+    </section>
+
+    <!-- Service List -->
+    <section class="max-w-6xl mx-auto my-10 px-4">
+        <h2 class="text-3xl font-bold text-center mb-6">Service List</h2>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="card bg-white shadow"><div class="card-body"><h3 class="card-title">Web Design</h3><p>I can create simple and clean website layouts.</p></div></div>
+            <div class="card bg-white shadow"><div class="card-body"><h3 class="card-title">Responsive Design</h3><p>I can make pages responsive for mobile, tablet, and desktop.</p></div></div>
+            <div class="card bg-white shadow"><div class="card-body"><h3 class="card-title">Contact Form</h3><p>I can create basic contact forms with simple validation.</p></div></div>
+        </div>
+    </section>
+
+    <!-- Client Feedback -->
+    <section class="max-w-6xl mx-auto my-10 px-4">
+        <h2 class="text-3xl font-bold text-center mb-6">Client Feedback</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="card bg-white shadow"><div class="card-body"><p>"The website design was simple and clean."</p><h3 class="font-bold mt-2">Client One</h3></div></div>
+            <div class="card bg-white shadow"><div class="card-body"><p>"Good work for a beginner project."</p><h3 class="font-bold mt-2">Client Two</h3></div></div>
+            <div class="card bg-white shadow"><div class="card-body"><p>"The page worked well on mobile devices."</p><h3 class="font-bold mt-2">Client Three</h3></div></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer footer-center bg-base-200 text-base-content p-6 mt-10">
+        <aside>
+            <p class="font-bold">My Portfolio</p>
+            <p>Simple Personal Portfolio Website</p>
+            <p id="dateTime">Loading date and time...</p>
+        </aside>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

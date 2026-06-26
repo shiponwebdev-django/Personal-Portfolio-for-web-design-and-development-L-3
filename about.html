@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="About page of John Doe personal portfolio website.">
+    <meta name="keywords" content="about me, biography, skills, clients, portfolio">
+    <meta name="author" content="John Doe">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Personal Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <!-- Navbar -->
+    <div class="navbar bg-base-100 shadow-md px-4">
+        <div class="navbar-start"><a href="index.html" class="text-xl font-bold">My Portfolio</a></div>
+        <div class="navbar-end lg:hidden">
+            <div class="dropdown dropdown-end">
+                <label tabindex="0" class="btn btn-ghost">Menu</label>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-10 p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a class="hover:bg-blue-100" href="index.html">Home</a></li><li><a class="hover:bg-blue-100" href="about.html">About</a></li><li><a class="hover:bg-blue-100" href="portfolio.html">Portfolio</a></li><li><a class="hover:bg-blue-100" href="services.html">Services</a></li><li><a class="hover:bg-blue-100" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="navbar-end hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+                <li><a class="hover:bg-blue-100" href="index.html">Home</a></li><li><a class="hover:bg-blue-100" href="about.html">About</a></li><li><a class="hover:bg-blue-100" href="portfolio.html">Portfolio</a></li><li><a class="hover:bg-blue-100" href="services.html">Services</a></li><li><a class="hover:bg-blue-100" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Page Title -->
+    <section class="bg-blue-100 py-12 text-center"><h1 class="text-4xl font-bold">About Me</h1><p class="mt-2">Know more about my personal and professional details.</p></section>
+
+    <!-- Personal Biography -->
+    <section class="max-w-6xl mx-auto my-10 px-4">
+        <div class="bg-white p-6 rounded-lg shadow">
+            <h2 class="text-3xl font-bold mb-4">Personal Biography</h2>
+            <p class="mb-3">My name is John Doe. I am a student and beginner web developer. I am interested in creating websites using simple and clean code.</p>
+            <p>I have basic knowledge of HTML, Tailwind CSS, DaisyUI, and JavaScript. I enjoy learning new things and practicing with small projects.</p>
+        </div>
+    </section>
+
+    <!-- Existing Client Section -->
+    <section class="max-w-6xl mx-auto my-10 px-4">
+        <h2 class="text-3xl font-bold text-center mb-6">Existing Clients</h2>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="card bg-white shadow"><div class="card-body text-center"><h3 class="font-bold">ABC Company</h3><p>Landing Page Design</p></div></div>
+            <div class="card bg-white shadow"><div class="card-body text-center"><h3 class="font-bold">Local Shop</h3><p>Business Website</p></div></div>
+            <div class="card bg-white shadow"><div class="card-body text-center"><h3 class="font-bold">School Project</h3><p>Education Website</p></div></div>
+            <div class="card bg-white shadow"><div class="card-body text-center"><h3 class="font-bold">Personal Client</h3><p>Portfolio Page</p></div></div>
+        </div>
+    </section>
+
+    <!-- Skill Information -->
+    <section class="max-w-6xl mx-auto my-10 px-4">
+        <h2 class="text-3xl font-bold text-center mb-6">Skill Information</h2>
+        <div class="bg-white p-6 rounded-lg shadow space-y-5">
+            <div><p class="font-semibold mb-1">HTML</p><progress class="progress progress-primary w-full" value="85" max="100"></progress></div>
+            <div><p class="font-semibold mb-1">Tailwind CSS</p><progress class="progress progress-primary w-full" value="75" max="100"></progress></div>
+            <div><p class="font-semibold mb-1">DaisyUI</p><progress class="progress progress-primary w-full" value="70" max="100"></progress></div>
+            <div><p class="font-semibold mb-1">JavaScript</p><progress class="progress progress-primary w-full" value="60" max="100"></progress></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer footer-center bg-base-200 text-base-content p-6 mt-10"><aside><p class="font-bold">My Portfolio</p><p>Simple Personal Portfolio Website</p><p id="dateTime">Loading date and time...</p></aside></footer>
+    <script src="script.js"></script>
+</body>
+</html>
